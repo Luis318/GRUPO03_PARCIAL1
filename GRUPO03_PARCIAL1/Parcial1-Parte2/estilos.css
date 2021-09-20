@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*CSS Document
+Autor: Jocelyn Benavides*/
+
+body{
+	background-image : url(https://s1.1zoom.me/b8254/805/Money_Closeup_Dollars_567069_1600x1200.jpg);
+}
+body h1{
+	background :#3E2601; 
+	padding : 10px;
+	height :3.5%;
+	width : 50%;
+	opacity : 0.50;
+	color : #fff  ;
+	text-align : left;
+	margin : #669FB0 10px;
+	font-family : "Gill Sans Extrabold", Helvetica, sans-serif;
+}
+table{
+
+    opacity : 0.80;	
+	border-color : #9B8800;
+	font-family : "Gill Sans Extrabold", Helvetica, sans-serif;
+}
+table th{
+	background : #3E2601 ;
+	color : #fff;
+}
+table td{
+	background : #C9C9AE;
+}
+
+

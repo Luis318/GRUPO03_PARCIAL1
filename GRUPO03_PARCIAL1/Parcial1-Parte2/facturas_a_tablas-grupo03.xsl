@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-
+<xsl:output method="html" />
 <xsl:template match="registro">
+    
     <html>
         <head>
             <title>Registros de facturas.</title>
@@ -9,7 +10,7 @@
          <body>
             <h1>Responsable del registro: <xsl:apply-templates select="responsable"/></h1>
             <xsl:for-each select="factura">
-                <table align="center" cellspacing="2" cellpadding="2" width="50%" border="2" text-align="center">
+                <table align="center" cellspacing="2" cellpadding="2" width="50%" border="1" text-align="center">
                     <tr>
                         <td style="border: hidden">Factura Numero:<xsl:apply-templates select="num"/></td>
                         <td style="border: hidden">Tipo: <xsl:value-of select="@tipo"/></td>
@@ -33,11 +34,11 @@
                         <th>Subtotal</th>
                     </tr>
                     <tr>
-                        <td align="center"><xsl:value-of select="lineafactura/codigo"/></td>
+                        <td align="center" style = "border: double"><xsl:value-of select="lineafactura/codigo"/></td>
                         <td><xsl:value-of select="lineafactura/detalle"/></td>
-                        <td align="center"><xsl:value-of select="lineafactura/cantidad"/></td>
-                        <td align="center"><xsl:value-of select="lineafactura/precio"/></td>
-                        <td align="center"><xsl:value-of select="lineafactura/subtotal"/></td>
+                        <td align="center" style = "border: double"><xsl:value-of select="lineafactura/cantidad"/></td>
+                        <td align="center" style = "border: double"><xsl:value-of select="lineafactura/precio"/></td>
+                        <td align="center" style = "border: double"><xsl:value-of select="lineafactura/subtotal"/></td>
                     </tr>
                     <tr>
                         <td colspan="4" align="right">Total</td>
