@@ -183,5 +183,133 @@
                 <valor>100.00</valor>
             </total>
         </factura>
+        
+        <factura tipo="final">
+            <num>745</num>
+            <cliente codigo="8753" sexo="masculino">
+                <nombre>Adam Shark</nombre>
+                <documento>
+                    <dui vence="2019-07-06">00873456-8</dui>
+                </documento>
+                <telefono tipo="celular" cia="claro">76459823</telefono>
+                <email>shark@usaid.com</email>
+            </cliente>
+            <direccion depto="San Marcos" municipio="Santa Ana">
+                <oficina>5ta 25 Av. Sur</oficina>
+            </direccion>
+            <lineafactura factura="786">
+                <codigo tipo="carne">878</codigo>
+                <detalle>Atun enlatado</detalle>
+                <cantidad>3</cantidad>
+                <precio>
+                    <moneda>$</moneda>
+                    <valor>3.00</valor>
+                </precio>
+                <subtotal>
+                    <moneda>$</moneda>
+                    <valor>9.00</valor>
+                </subtotal>
+            </lineafactura>
+            <total>
+                <moneda>$</moneda>
+                <valor>9.00</valor>
+            </total>
+        </factura>
+        
+        <factura tipo="final">
+            <num>987</num>
+            <cliente codigo="2312" sexo="femenino">
+                <nombre>Maria DB</nombre>
+                <documento>
+                    <dui vence="2017-07-07">00976791-9</dui>
+                </documento>
+                <telefono tipo="celular" cia="movistar">61545364</telefono>
+                <email>mariD@usaid.com</email>
+            </cliente>
+            <direccion depto="Usulutan" municipio="Usulutan">
+                <oficina>Final 25 Av. Norte</oficina>
+            </direccion>
+            <lineafactura factura="656">
+                <codigo tipo="souvenir">247</codigo>
+                <detalle>Camisa de El Salvador: Sonsonate</detalle>
+                <cantidad>1</cantidad>
+                <precio>
+                    <moneda>$</moneda>
+                    <valor>10.00</valor>
+                </precio>
+                <subtotal>
+                    <moneda>$</moneda>
+                    <valor>20.00</valor>
+                </subtotal>
+            </lineafactura>
+            <total>
+                <moneda>$</moneda>
+                <valor>20.00</valor>
+            </total>
+        </factura>
+        
+        <factura tipo="credito">
+            <num>750</num>
+            <cliente codigo="2090" sexo="femenino">
+                <nombre>Celia Bermudez</nombre>
+                <documento>
+                    <pasaporte pais="CAN">B908k86</pasaporte>
+                </documento>
+                <telefono tipo="celular" cia="digicel">76252676</telefono>
+                <email>CeliaB@sica.com</email>
+            </cliente>
+            <direccion depto="Morazan" municipio="San Isidro">
+                <oficina>6ta Av. Norte casa #9</oficina>
+            </direccion>
+            <lineafactura factura="890">
+                <codigo tipo="pcportatiles">876</codigo>
+                <detalle>laptop Azus</detalle>
+                <cantidad>2</cantidad>
+                <precio>
+                    <moneda>$</moneda>
+                    <valor>500.00</valor>
+                </precio>
+                <subtotal>
+                    <moneda>$</moneda>
+                    <valor>1500.00</valor>
+                </subtotal>
+            </lineafactura>
+            <total>
+                <moneda>$</moneda>
+                <valor>1500.00</valor>
+            </total>
+        </factura>
+        
+        <factura tipo="credito">
+            <num>765</num>
+            <cliente codigo="4080" sexo="femenino">
+                <nombre>Debora Martinez</nombre>
+                <documento>
+                    <pasaporte pais="USA">kD2134012</pasaporte>
+                </documento>
+                <telefono tipo="celular" cia="tigo">75403291</telefono>
+                <email>debi@hotmail.com</email>
+            </cliente>
+            <direccion depto="Usulutan" municipio="Usulutan">
+                <oficina>7ta Av norOeste</oficina>
+            </direccion>
+            <lineafactura factura="207">
+                <codigo tipo="tecnologico">876</codigo>
+                <detalle>lpantalla led</detalle>
+                <cantidad>4</cantidad>
+                <precio>
+                    <moneda>$</moneda>
+                    <valor>200.00</valor>
+                </precio>
+                <subtotal>
+                    <moneda>$</moneda>
+                    <valor>800.00</valor>
+                </subtotal>
+            </lineafactura>
+            <total>
+                <moneda>$</moneda>
+                <valor>800.00</valor>
+            </total>
+        </factura>
     </registro>
 </parcial1_3>

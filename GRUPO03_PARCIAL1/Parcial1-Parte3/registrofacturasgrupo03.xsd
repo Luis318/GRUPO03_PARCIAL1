@@ -15,7 +15,14 @@
          <xs:element name="factura" maxOccurs="unbounded">
            <xs:complexType>
              <xs:sequence>
-               <xs:element name="num" type="xs:int"/>
+               <xs:element name="num" >
+               <xs:simpleType>
+               <xs:restriction base="xs:integer">
+               <xs:minLength value="1"/>
+               <xs:maxLength value="30"/>
+               </xs:restriction>               
+               </xs:simpleType>               
+               </xs:element>
                <xs:element ref="cliente"/>
                <xs:element ref="direccion" minOccurs="1"/>
                <xs:element ref="lineafactura"/>
@@ -27,10 +34,22 @@
          <xs:element name="cliente">
            <xs:complexType>
               <xs:sequence>
-               <xs:element name="nombre" type="xs:string"/>
+               <xs:element name="nombre" >
+               <xs:simpleType>
+               <xs:restriction base="xs:string">
+               <xs:length value="30"/>               
+               </xs:restriction>               
+               </xs:simpleType>
+               </xs:element>
                <xs:element ref="documento" maxOccurs="unbounded"/>
                <xs:element ref="telefono"/>
-               <xs:element name="email" type="xs:string"/>
+               <xs:element name="email">
+               <xs:simpleType>
+               <xs:restriction base="xs:string">
+               <xs:length value="30"/>
+               </xs:restriction>               
+               </xs:simpleType>               
+               </xs:element>
               </xs:sequence>
              <xs:attribute name="codigo" type="xs:string" use="required"/>
              <xs:attribute name="sexo" type="xs:string" use="required"/>
@@ -58,7 +77,13 @@
          <xs:element name="direccion">
            <xs:complexType>
              <xs:sequence>
-               <xs:element name="casa" type="xs:string"/>
+               <xs:element name="casa" >
+               <xs:simpleType>
+               <xs:restriction base="xs:string">
+               <xs:length value="10"/>               
+               </xs:restriction>               
+               </xs:simpleType>               
+               </xs:element>
                <xs:element name="oficina" type="xs:string"/>
                </xs:sequence>
                <xs:attribute name="depto" type="xs:string" use="required"/>
@@ -113,5 +138,19 @@
          </xs:element>
        </xs:sequence>
      </xs:complexType>
+     
+      <xs:group name="parcial1_3-factura">
+  <xs:sequence>
+    <xs:element name="cliente" type="xs:string"/>
+    <xs:element name="detallesPedido" type="xs:string"/>
+    <xs:element name="precio" type="xs:string"/>
+    <xs:element name="subtotal" type="xs:string"/>
+  </xs:sequence>
+</xs:group>
    </xs:element>
 </xs:schema>
+         
+     
+    
+
+
