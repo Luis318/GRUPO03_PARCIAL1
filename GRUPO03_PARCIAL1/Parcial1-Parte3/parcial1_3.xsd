@@ -114,4 +114,12 @@
        </xs:sequence>
      </xs:complexType>
    </xs:element>
+   <xs:group name="parcial1_3">
+  <xs:sequence>
+    <xs:element name="cliente" type="xs:string"/>
+    <xs:element name="orden" type="xs:string"/>
+    <xs:element name="subtotal" type="xs:string"/>
+    <xs:element name="moneda" type="xs:string"/>
+  </xs:sequence>
+</xs:group>
 </xs:schema>
